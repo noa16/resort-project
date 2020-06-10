@@ -1,0 +1,97 @@
+.header {
+  background: url("../images/defaultBcg.jpeg") center/cover no-repeat fixed;
+  min-height: 100vh;
+}
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-left: 20rem;
+  padding-right: 5rem 3rem;
+}
+.ourRoombtn {
+  background: var(--primaryColor);
+  border: none;
+  padding: 20px;
+  margin-left: 19rem;
+  letter-spacing: var(--mainSpacing);
+  border: 1px solid var(--darkGrey);
+}
+
+.ourRoombtn:hover {
+  color: var(--offWhite);
+  transition: var(--transition);
+  font-weight: 200;
+}
+
+.parh {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  margin-left: 4rem;
+}
+.services {
+  background: var(--darkGrey);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10rem;
+}
+.item {
+  max-width: 15rem;
+  margin-left: 7rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: large;
+  cursor: pointer;
+}
+.serviceTitle {
+  background: var(--darkGrey);
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  font-size: 4rem;
+}
+.rooms {
+  display: flex;
+  justify-content: space-between;
+}
+.imgContainer {
+  position: relative;
+}
+
+.image {
+  height: 15rem;
+  object-fit: cover;
+}
+.room {
+  width: 10.33%;
+  transition: var(--transition);
+  height: 10%;
+  padding: 5px;
+  flex: 0 0 calc(25% - 1rem);
+  margin-top: 50px;
+}
+
+.room:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+.image:hover {
+  color: rgb(0, 0, 0);
+}
+.subTitle {
+  text-align: center;
+  background-color: var(--darkGrey);
+  width: 26.7rem;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 605px) {
+  .item {
+    margin-top: 3rem;
+    min-width: 100px;
+  }
+}
